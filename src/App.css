@@ -1,20 +1,49 @@
-.App {
+:root {
+  --main-background-color: #173f5f;
+
+  --main-text-color: #3caea3;
+  --secondary-text-color: #f6d55c;
+  --third-text-color: #ed553b;
+
+  --main-select-color: #20639b;
+}
+
+h1 {
   text-align: center;
+  color: var(--main-text-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
+  color: var(--secondary-text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  text-align: center;
+  color: var(--third-text-color);
 }
 
-.App-header {
-  background-color: #282c34;
+select {
+  color: var(--main-select-color);
+  font-size: 32px;
+  width: 320px;
+}
+
+.Button {
+  width: 140px;
+  height: 100px;
+}
+
+.Like {
+  background-color: green;
+}
+
+.Dislike {
+  background-color: red;
+}
+
+.Header {
+  background-color: var(--main-background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +53,30 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Picture {
+  height: 340px;
+  width: 340px;
+  border-width: 2px;
+  border-color: var(--main-text-color);
+  border-style: solid;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PicturesContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6px;
+  padding: 25px;
+  margin: 45px;
+}
+
+.PictureWrapper {
+  flex-basis: auto;
+  padding: 18px;
+  height: auto;
+  padding: 50px;
 }
