@@ -29,20 +29,23 @@ select {
   width: 320px;
 }
 
-.Button {
-  width: 140px;
-  height: 100px;
+button {
+  width: 240px;
+  height: 200px;
+  background-color: var(--main-text-color);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border-color: var(--main-text-color);
+  cursor: pointer;
 }
 
-.Like {
-  background-color: green;
+.Clickable {
+  cursor: pointer;
 }
 
-.Dislike {
-  background-color: red;
-}
-
-.Header {
+.Container {
   background-color: var(--main-background-color);
   min-height: 100vh;
   display: flex;
@@ -79,4 +82,15 @@ select {
   padding: 18px;
   height: auto;
   padding: 50px;
+}
+
+.LikeCounter {
+  font-weight: bold;
+  font-size: 32;
+  color: var(--secondary-text-color);
+  position: sticky;
+  left: 90%;
+  top: 3%;
+  width: 300px;
+  height: 220px;
 }
