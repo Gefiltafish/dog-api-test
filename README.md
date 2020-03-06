@@ -21,17 +21,17 @@ Builds the app for production to the `build` folder.<br />
 
 ## Why I choose what:
 
-### Create React App
+### `Create React App`
 
 Easy to set up and get started with.
 I enjoy using react.
 Can easily include Typescript.
 
-### Typescript
+### `Typescript`
 
 Typing is great.
 Altough it did not make it's fair share in here, typing the api-calls will help further production.
 
-### Styling the unnecessary logs in console
+### `Styling the unnecessary logs in console`
 
 Because it's fun.
